@@ -11,6 +11,7 @@ import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,6 +23,7 @@ import com.ipartek.formacion.rest.musiconcloud.domain.Cancion;
 import com.ipartek.formacion.rest.musiconcloud.domain.ResponseMensaje;
 import com.ipartek.formacion.rest.musiconcloud.model.CancionesRepository;
 
+@CrossOrigin(origins = "*")
 @RestController
 public class CancionesController {
 
